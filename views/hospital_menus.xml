@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="hospital_main_menu"
+              name="Hospital" sequence="10"/>
+
+</odoo>

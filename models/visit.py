@@ -6,20 +6,14 @@ class HospitalVisit(models.Model):
     _description = 'Hospital Visit'
 
     visit_date = fields.Date(
-        string='Дата',
-        default=fields.Date.today,
-    )
+        string='Date',
+        default=fields.Date.today,)
 
-    doctor_name_ids = fields.Many2many(
-        string='Лікар',
-        comodel_name='hospital.doctor.name',
-    )
-    patient_name_ids = fields.Many2many(
-        string='Пацієнт',
-        comodel_name='hospital.patient.name',
-    )
+    doctor_ids = fields.Many2one(
+        comodel_name='hospital.doctor',)
 
-    disease_ids = fields.Many2many(
-        string='Діагноз',
-        comodel_name='hospital.disease.name',
-    )
+    patient_ids = fields.Many2one(
+        comodel_name='hospital.patient',)
+
+    disease_ids = fields.Many2one(
+        comodel_name='hospital.disease',)

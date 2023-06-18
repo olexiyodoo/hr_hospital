@@ -1,0 +1,30 @@
+<odoo noupdate="1">
+
+    <data>
+
+          <record id="Grandmohte_Galya" model="hospital.patient">
+            <field name="name">Galya</field>
+            <field name="age">87</field>
+            <field name="doctor_ids" ref="Dr_Bormental"/>
+          </record>
+
+          <record id="Mr_Cherchil" model="hospital.patient">
+            <field name="name">Cherchil</field>
+            <field name="age">92</field>
+            <field name="doctor_ids" ref="Dr_Borman"/>
+          </record>
+
+          <record id="Mr_Holms" model="hospital.patient">
+            <field name="name">Sherlock Holms</field>
+            <field name="age">54</field>
+            <field name="doctor_ids" ref="Dr_Vatson"/>
+          </record>
+
+          <record id="Pr_Kuchma" model="hospital.patient">
+            <field name="name">Leonid Kuchma</field>
+            <field name="age">44</field>
+            <field name="doctor_ids" ref="Dr_Amosov"/>
+          </record>
+
+    </data>
+</odoo>

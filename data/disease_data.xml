@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <data>
+
+          <record id="eye_disease" model="hospital.disease">
+            <field name="name">Eye disease</field>
+          </record>
+
+          <record id="ear_disease" model="hospital.disease">
+            <field name="name">Ear disease</field>
+          </record>
+
+          <record id="skin_disease" model="hospital.disease">
+            <field name="name">Skin disease</field>
+          </record>
+
+          <record id="heart_disease" model="hospital.disease">
+            <field name="name">Heart disease</field>
+          </record>
+
+          <record id="throat_disease" model="hospital.disease">
+            <field name="name">Throat disease</field>
+          </record>
+
+    </data>
+</odoo>

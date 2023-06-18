@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <menuitem id="hospital_main_menu"
-              name="Hospital" sequence="10"/>
+              name="Hospital"
+              sequence="10"/>
+
+    <menuitem id="hospital_management_menu"
+              name="Management"
+              parent="hospital_main_menu"
+              sequence="100"/>
+
+     <menuitem id="settings_main_menu"
+              name="Settings"
+              parent="hospital_main_menu"
+              sequence="999"/>
 
 </odoo>

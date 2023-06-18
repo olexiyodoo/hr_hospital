@@ -1,0 +1,30 @@
+<odoo noupdate="1">
+
+    <data>
+
+          <record id="Dr_Bormental" model="hospital.doctor">
+            <field name="name">Bormental</field>
+            <field name="profession">Eye</field>
+            <field name="cabinet">1921</field>
+          </record>
+
+          <record id="Dr_Borman" model="hospital.doctor">
+            <field name="name">Borman</field>
+            <field name="profession">Brain</field>
+            <field name="cabinet">1939</field>
+          </record>
+
+          <record id="Dr_Vatson" model="hospital.doctor">
+            <field name="name">Vatson</field>
+            <field name="profession">Hand</field>
+            <field name="cabinet">1898</field>
+          </record>
+
+          <record id="Dr_Amosov" model="hospital.doctor">
+            <field name="name">Amosov</field>
+            <field name="profession">Heart</field>
+            <field name="cabinet">1985</field>
+          </record>
+
+    </data>
+</odoo>

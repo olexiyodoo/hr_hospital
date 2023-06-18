@@ -1,13 +1,13 @@
-from odoo import fields, models
+from odoo import models, fields
 
 
 class HospitalPatient(models.Model):
     _name = 'hospital.patient'
-    _description = 'Hospital Patient'
+    _description = 'Patient'
 
-    first_name = fields.Char()
-    last_name = fields.Char()
-    doctor_name_ids = fields.Many2many(
-        comodel_name='hr.hospital.name'
-    )
+    name = fields.Char()
 
+    age = fields.Integer()
+
+    doctor_ids = fields.Many2one(
+        comodel_name='hospital.doctor', )

@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="view_users_form_simple_modif" model="ir.ui.view">
-        <field name="model">res.users</field>
-        <field name="inherit_id" ref="base.view_users_form_simple_modif" />
+    <record id="hospital_doctor_view_form" model="ir.ui.view">
+        <field name="name">hospital.doctor.form ()</field>
+        <field name="model">hospital.doctor</field>
         <field name="arch" type="xml">
-            <field name="email" position="after">
-                <field name="chatter_position" widget="radio" />
-            </field>
+            <form delete="false">
+                <sheet>
+                    <header></header>
+                    <group>
+                        <field name="name"/>
+                        <field name="profession"/>
+                        <field name="cabinet"/>
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
+
+    <record id="hospital_doctor_view_tree" model="ir.ui.view">
+        <field name="name">hospital.doctor.tree</field>
+        <field name="model">hospital.doctor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="profession"/>
+                <field name="cabinet"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_hospital_doctor_act_window" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.doctor</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_doctor"
+              action="action_hospital_doctor_act_window"
+              name="Doctor"
+              parent="hospital_management_menu"
+              sequence="300"/>
+
 </odoo>
